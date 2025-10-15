@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support REZGA</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="left">
+            <h2>REZGA</h2>
+        </div>
+        <div class="right">
+            <a href="https://github.com/REZGA1" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+    
+            <a href="https://www.instagram.com/abdou_rezig1/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+    
+            <a href="">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <span>Donate </span>
+            </a>
+        </div>
+    </nav>
+
+  <!-- Moving background -->
+  <div class="background-animation"></div>
+
+  <!-- Main content -->
+  <main>
+        <div class="container">
+        <h2>Support REZGA</h2>
+
+        <!-- Options -->
+        <div class="options">
+            <label><input type="radio" name="method" value="iban" checked> IBAN</label>
+            <label><input type="radio" name="method" value="paysera"> Paysera</label>
+            <label><input type="radio" name="method" value="ccp"> CCP</label>
+        </div>
+
+        <!-- Content area -->
+        <div id="contentArea">
+
+            <!-- IBAN -->
+            <div id="ibanSection">
+            <h4>Use this IBAN for international donations</h4>
+
+            <div class="qr-box">
+                <img src="/image/Donate.png" alt="QR Code" class="qr">
+                <button id="toggleBtn">Show Details</button>
+            </div>
+
+            <div id="details">
+                <p><strong>Full Name:</strong> Abderrahmane Rezig</p>
+                <p><strong>IBAN:</strong> LT093500010015818825</p>
+                <p><strong>SWIFT/BIC:</strong> EVIULT2VXXX</p>
+                <p><strong>Bank Name:</strong> Paysera LT, UAB</p>
+            </div>
+            </div>
+
+            <!-- Paysera -->
+            <div id="payseraSection" class="hidden">
+            <h4>Donate easily via Paysera</h4>
+            <img src="/image/qrCode.jpg" alt="Paysera QR" class="qr">
+            </div>
+
+            <!-- CCP -->
+            <div id="ccpSection" class="hidden">
+            <h4>Donate using CCP (Algerians only)</h4>
+            <p>Donate using Baridimob. Copy the account number and go to Transfers. Paste the account number and
+                choose the amount you want.</p>
+
+            <div class="ccp-number">
+                <strong>Account Number:</strong>
+                <span id="ccpNumber">6280703115626910</span>
+                <button id="copyBtn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- <p class="address">📍 Address: Vilnius, Lithuania</p> -->
+        </div>
+        <div class="thank-you">
+             Thank you for supporting me — every small contribution helps me keep creating amazing projects!
+        </div>
+
+    
+  </main>
+
+
+  <script src="logic.js"></script>
+</body>
+
+</html>
